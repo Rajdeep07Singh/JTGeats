@@ -1,0 +1,834 @@
+body {
+  margin: 0;
+  line-height: 1.6;
+  width: 1440px;
+  height: 800px;
+  /* Fixed width for pixel-perfect design */
+  margin: 0 auto;
+  /* Center the layout horizontally */
+}
+
+/* Navbar styling */
+.navbar {
+  height: 80px;
+  padding: 26px 130px 30px 146px;
+  /* Padding values for top, right, bottom, left */
+  gap: 0px;
+  display: flex;
+  /* Ensure the navbar uses flex layout */
+  justify-content: space-between;
+  /* Space items evenly */
+  align-items: center;
+  /* Align items vertically centered */
+  background-color: #1ac073;
+  /* Background color of the navbar */
+  color: white;
+  /* Text color */
+}
+
+.navbar .logo {
+  font-size: 32px;
+  /* Fixed font size for logo */
+  font-weight: bold;
+  font-family: "Squada One", sans-serif;
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 40px;
+  font-family: Arial, sans-serif;
+  /* Fixed gap between navigation links */
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.navbar .icons {
+  display: flex;
+  gap: 24px;
+  /* Fixed gap between icons */
+}
+
+.navbar .icons img {
+  width: 24px;
+  /* Fixed size for icons */
+  height: 24px;
+  object-fit: contain;
+}
+
+.cart-image {
+  position: relative;
+}
+
+.navbar .icons .cart-image .ellipse {
+  position: absolute;
+  top: 0px;
+  /* Positioning relative to the cart icon */
+  right: 0px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-image: url("ellipse-image.png");
+  background-size: cover;
+}
+
+/* Hero section */
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 720px;
+  /* Fixed height for hero section */
+  background: #1ac073;
+  color: white;
+  padding-left: 140px;
+  /* Fixed padding for hero section */
+}
+
+.hero .hero-text {
+  max-width: 720px;
+  /* Fixed width for text area */
+  padding-top: 60px;
+}
+
+.hero h1 {
+  width: 534px;
+  height: 147px;
+  gap: 0px;
+  font-family: "Roboto", sans-serif;
+  font-size: 69px;
+  font-weight: 400;
+  line-height: 82.03px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.hero p {
+  width: 441px;
+  height: 40px;
+  gap: 0px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.012em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.search-bar {
+  position: relative;
+  width: 398px;
+  height: 58px;
+  gap: 0px;
+  border-radius: 10px 10px 10px 10px;
+  background-color: white;
+  /* Add a background color to make it visible */
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 12px 0 0 12px;
+}
+
+.search-btn {
+  position: absolute;
+  width: 112px;
+  height: 58px;
+  left: 286px;
+  padding: 19px 29px 19px 29px;
+  gap: 10px;
+  border-radius: 0px 10px 10px 0px;
+  background-color: #f3ba00;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.hero .hero-image {
+  width: 521.63px;
+  height: 525px;
+  position: absolute;
+  /* Make sure it’s positioned absolutely within the .hero section */
+  top: 100px;
+  left: 724px;
+  object-fit: cover;
+  padding-left: 50px;
+}
+
+.second-page {
+  width: 1440px;
+  height: 2029px;
+  padding: 105px 0px 0px 0px;
+  /* Padding values for top, right, bottom, left */
+  background-color: #f0faf7;
+  /* Light background color for contrast */
+  flex-direction: column;
+  gap: 40px;
+  display: flex;
+  /* Flexbox for layout */
+  flex-direction: column;
+  /* Stack items vertically */
+  /* Space between elements */
+}
+
+.second-page > * {
+  position: relative;
+  /* Make child elements moveable */
+  left: 130px;
+}
+
+.second-page h2 {
+  /* Page heading styling */
+  width: 400px;
+  height: 24px;
+  /* Ensuring visibility */
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: -0.012em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #333;
+  /* Change to desired color */
+  margin-bottom: 25px;
+  /* Adds space below the heading */
+}
+
+.home-kitchen {
+  width: 1180px;
+  height: 1131px;
+  top: 87px;
+  padding: 0px 0px 43px 0px;
+  gap: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 0;
+}
+
+.box {
+  width: 277px;
+  height: 337px;
+  font-family: "Roboto", sans-serif;
+}
+
+.box-image {
+  width: 277px;
+  /* Matches the box width */
+  height: 250px;
+  /* Height of the image */
+  gap: 0px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.box-details {
+  display: flex;
+  width: 246px;
+  /* Hug width */
+  height: 20px;
+  /* Hug height */
+  background-color: #f5f5f5;
+  /* Optional background color */
+  margin: 0 auto;
+  gap: 61px;
+}
+
+.box-details .p1 {
+  width: 127px;
+  /* Fixed width for p1 */
+  height: 20px;
+  /* Fixed height for p1 */
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.012em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin: 0;
+}
+
+.box-details .p2 {
+  width: 35px;
+  /* Fixed width for p2 */
+  height: 20px;
+  /* Fixed height for p2 */
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.012em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin: 0;
+}
+
+.box-extra {
+  width: auto;
+  /* Adapts to the content inside (Hug width) */
+  max-width: 241px;
+  /* Ensures the width does not exceed specified bounds */
+  display: flex;
+  /* Enables layout alignment within */
+  align-items: center;
+  /* Vertically centers content */
+  justify-content: space-between;
+  height: 20px;
+  margin-top: 16px;
+  padding-left: 16px;
+}
+
+.time {
+  width: 68px;
+  /* Fixed width */
+  height: 20px;
+  /* Adjusts to content, maintains dynamic height */
+  padding: 0px 4px 0px 4px;
+  /* Padding inside the element */
+  gap: 4px;
+  /* Space between inner elements */
+  border-radius: 5px 5px 5px 5px;
+  /* Rounded corners on the left */
+  background: #bebebe;
+  /* Light gray background */
+  box-shadow: 0px 0px 1px 0px #00000040;
+  /* Shadow around the box */
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  /* Font size */
+  font-weight: 400;
+  /* Normal font weight */
+  line-height: 20px;
+  /* Line height */
+  text-align: center;
+  /* Center the text */
+  display: flex;
+  /* Flexbox for centering content */
+  align-items: center;
+  /* Vertically center items */
+  justify-content: center;
+  margin-left: -65px;
+}
+
+.time-details {
+  width: 62px;
+  /* Adapts dynamically to content inside */
+  height: 20px;
+  /* Adapts dynamically based on content */
+  padding: 0px 4px 0px 4px;
+  /* Padding inside the inner div */
+  gap: 4px;
+  /* Space between inner elements */
+  border-radius: 5px;
+  /* Rounded top left corners */
+  background: #f7f8fa;
+}
+
+.plus-icon {
+  width: 22px;
+  height: 20px;
+  gap: 10px;
+  border-radius: 5px 0px 0px 0px;
+}
+
+.rating {
+  width: auto;
+  /* Hug width (adapt to content) */
+  height: 20px;
+  /* Fixed height */
+  padding: 0px 4px 0px 4px;
+  gap: 4px;
+  /* Space between the star icon and text */
+  border-radius: 5px 0px 0px 0px;
+  /* Rounded top-left corner */
+  box-shadow: 0px 0px 1px 0px #00000040;
+  /* Light shadow */
+  display: flex;
+  /* Arrange star icon and rating horizontally */
+  align-items: center;
+}
+
+.rating .p {
+  width: 17px;
+  height: 20px;
+  gap: 0px;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.012em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin: 0;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 20px;
+  letter-spacing: -0.012em;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-top: -140px;
+}
+
+.box1 {
+  min-width: calc(33.33% - 20px); /* Adjust width to fit 3 items */
+  margin: 0 10px; /* Adjust margin to create gap */
+  width: 277px;
+  height: 337px;
+  font-family: "Roboto", sans-serif;
+}
+
+.box1-image {
+  width: 277px;
+  /* Matches the box width */
+  height: 250px;
+  /* Height of the image */
+  gap: 0px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.box1-details {
+  display: flex;
+  width: 246px;
+  /* Hug width */
+  height: 20px;
+  /* Hug height */
+  background-color: #f5f5f5;
+  /* Optional background color */
+  margin: 0 auto;
+  gap: 61px;
+}
+
+.box1-details .p1 {
+  width: 127px;
+  /* Fixed width for p1 */
+  height: 20px;
+  /* Fixed height for p1 */
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.012em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin: 0;
+}
+
+.box1-details .p2 {
+  width: 35px;
+  /* Fixed width for p2 */
+  height: 20px;
+  /* Fixed height for p2 */
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.012em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin: 0;
+}
+
+.box1-extra {
+  width: auto;
+  /* Adapts to the content inside (Hug width) */
+  max-width: 241px;
+  /* Ensures the width does not exceed specified bounds */
+  display: flex;
+  /* Enables layout alignment within */
+  align-items: center;
+  /* Vertically centers content */
+  justify-content: space-between;
+  height: 20px;
+  margin-top: 16px;
+  padding-left: 16px;
+}
+
+.time1 {
+  width: 68px;
+  /* Fixed width */
+  height: 20px;
+  /* Adjusts to content, maintains dynamic height */
+  padding: 0px 4px 0px 4px;
+  /* Padding inside the element */
+  gap: 4px;
+  /* Space between inner elements */
+  border-radius: 5px 5px 5px 5px;
+  /* Rounded corners on the left */
+  background: #bebebe;
+  /* Light gray background */
+  box-shadow: 0px 0px 1px 0px #00000040;
+  /* Shadow around the box */
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  /* Font size */
+  font-weight: 400;
+  /* Normal font weight */
+  line-height: 20px;
+  /* Line height */
+  text-align: center;
+  /* Center the text */
+  display: flex;
+  /* Flexbox for centering content */
+  align-items: center;
+  /* Vertically center items */
+  justify-content: center;
+  margin-left: -65px;
+}
+
+.time1-details {
+  width: 62px;
+  /* Adapts dynamically to content inside */
+  height: 20px;
+  /* Adapts dynamically based on content */
+  padding: 0px 4px 0px 4px;
+  /* Padding inside the inner div */
+  gap: 4px;
+  /* Space between inner elements */
+  border-radius: 5px;
+  /* Rounded top left corners */
+  background: #f7f8fa;
+}
+
+.slider {
+  align-items: center; /* Vertically center the content */
+  justify-items: space-between; /* Center horizontally in each grid item */
+  width: 100%; /* Ensure full width */
+  display: flex;           /* Flexbox for horizontal layout */
+  align-items: center;     /* Vertically center the content */
+  justify-content: center; /* Center the carousel container horizontally */
+  gap: 10px; 
+}
+
+.carousel-container {
+  overflow: hidden;
+  margin-top: -15px;
+  max-width: 985px;
+  flex-grow: 1; 
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1; /* Ensure buttons appear above carousel */
+}
+
+.second-page .request-dish {
+  width: 210px;
+  height: 48px;
+  top: 300px;
+  left: 615px;
+  border-radius: 10px;
+  background: #1ac073;
+  border: none;
+  /* Removes default border for buttons */
+  color: white;
+  /* Assuming white text color for contrast */
+  font-size: 16px;
+  /* Adjust as needed for text size */
+  text-align: center;
+  cursor: pointer;
+  font-family: Roboto, sans-serif;
+  /* Ensure fallback font is included */
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.012em;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.third-page {
+  width: 1440px;
+  height: 860px;
+  position: relative;
+  display: flex;
+  flex-direction: column; /* Change direction to stack items vertically */
+  text-align: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #f0faf7 60%, #c7eacc 40%);
+}
+
+.third-page h4 {
+  width: 750px;
+  height: auto;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin: 0;
+  padding-top: 80px;
+}
+
+.third-page p {
+  font-family: "Montserrat", sans-serif; /* Sets the font family */
+  font-size: 14px; /* Specifies the font size */
+  font-weight: 500; /* Sets the font weight */
+  line-height: 20px; /* Defines the line height */
+  letter-spacing: 0.2px; /* Adjusts the spacing between letters */
+  text-align: center; /* Centers the text */
+  text-underline-position: from-font; /* Uses the underline position defined by the font */
+  text-decoration-skip-ink: none;
+  padding-bottom: 30px;
+}
+
+.third-page .promo-video {
+  width: 877px; /* Fixed width */
+  height: 442px; /* Fixed height */
+  margin-top: 20px; /* Space between <p> and the video */
+  object-fit: cover;
+}
+
+.promo-video-wrapper {
+  position: relative;
+  width: 877px;
+  height: 442px;
+  margin-top: 20px;
+  margin: 0 auto;
+}
+
+.promo-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Play button image styles */
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px; /* Adjust to your image size */
+  height: 80px; /* Adjust to your image size */
+  cursor: pointer;
+  display: block; /* Initially show the play button */
+}
+
+.fourth-page {
+  display: flex; /* Use Flexbox to arrange the content horizontally */
+  justify-content: space-between; /* Distribute space between left and right content */
+  align-items: flex-start;
+  width: 1440px; /* Fixed width */
+  height: 603px; /* Hug height */
+  position: relative; /* Ensures the `top` value applies correctly */
+  padding: 50px 129px; /* Padding: top-right-bottom-left */
+  box-sizing: border-box; /* Ensures padding doesn't affect total width/height */
+  background-color: #f7f8fa;
+}
+
+.fourth-page h5 {
+  font-family: "Roboto", sans-serif; /* Sets the font to Roboto */
+  font-size: 24px; /* Sets the font size */
+  font-weight: 400; /* Normal weight */
+  line-height: 24px; /* Line height matching the font size */
+  letter-spacing: -0.012em; /* Slightly condenses the text */
+  text-align: left; /* Aligns the text to the left */
+  text-underline-position: from-font; /* Positions underline according to the font */
+  text-decoration-skip-ink: none; /* Ensures underlines pass through descenders */
+}
+
+.fourth-page p {
+  font-family: "Roboto", sans-serif; /* Sets the font to Roboto */
+  font-size: 12px; /* Sets the font size */
+  font-weight: 400; /* Normal weight */
+  line-height: 20px; /* Provides spacing between lines */
+  letter-spacing: -0.012em; /* Slightly condenses the text */
+  text-align: left; /* Aligns the text to the left */
+  text-underline-position: from-font; /* Positions underline according to the font */
+  text-decoration-skip-ink: none; /* Ensures underlines pass through descenders */
+}
+
+.fourth-page .input-container {
+  width: 632px; /* Container width */
+  height: 58px; /* Container height */
+  display: flex; /* Align items horizontally */
+  justify-content: space-between; /* Add space between input boxes */
+  align-items: center; /* Vertically center input boxes */
+  margin-top: 20px; /* Add some spacing from the <p> element */
+  gap: 10px;
+}
+
+.fourth-page .input-box {
+  width: 300px; /* Input box width */
+  height: 58px; /* Input box height */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 14px; /* Adjust font size inside the input */
+  background-color: #ffffff;
+  border: none;
+  padding: 15px;
+}
+
+.fourth-page .input-box::placeholder {
+  font-family: "Roboto", sans-serif; /* Sets the font to Roboto */
+  font-size: 16px; /* Sets the font size */
+  font-weight: 400; /* Normal weight */
+  line-height: 20px; /* Line height */
+  letter-spacing: -0.012em; /* Slightly condenses the text */
+  text-align: left; /* Aligns the text to the left */
+  text-underline-position: from-font; /* Positions underline according to the font */
+  text-decoration-skip-ink: none; /* Ensures underlines pass through descenders */
+  color: rgb(128, 119, 119);
+}
+
+.fourth-page .textarea-container {
+  width: 605px; /* Div width */
+  height: 164px; /* Div height */
+  margin-top: 50px; /* Spacing below input-container */
+}
+
+.fourth-page .textarea-box {
+  width: 100%; /* Full width of container */
+  height: 100%; /* Full height of container */
+  border: none; /* Removes default border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 15px; /* Inner padding for typing */
+  font-size: 14px; /* Text size inside textarea */
+  background-color: #ffffff;
+  resize: none; /* Disables resizing of textarea */
+  outline: none; /* Removes default blue border on focus */
+}
+
+.fourth-page .textarea-box::placeholder {
+  font-family: "Roboto", sans-serif; /* Font family */
+  font-size: 16px; /* Font size */
+  font-weight: 400; /* Font weight */
+  line-height: 20px; /* Line height */
+  letter-spacing: -0.012em; /* Letter spacing */
+  text-align: left; /* Align text to the left */
+  text-underline-position: from-font; /* Text underline position */
+  text-decoration-skip-ink: none; /* Skip ink for text decoration */
+}
+
+.fourth-page .submit {
+  width: 210px; /* Fixed width */
+  height: 58px; /* Height */
+  left: -0.5px; /* Horizontal positioning adjustment */
+  border-radius: 10px; /* Rounded corners */
+  background-color: #1ac073; /* Green background (change color as needed) */
+  color: white; /* Text color */
+  font-size: 16px; /* Text size */
+  font-weight: 400; /* Font weight */
+  border: none; /* Remove border */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-top: 40px;
+  font-size: 16px; /* Font size */
+  font-weight: 400; /* Font weight */
+  line-height: 20px; /* Line height */
+  letter-spacing: -0.012em;
+}
+
+.fourth-page .right {
+  margin-top: 40px;
+}
+
+.fourth-page .right .delivery-man {
+  width: 503px;
+  height: 402px;
+}
+
+.footer {
+  height: 80px;
+  padding: 26px 130px 30px 146px; /* Padding values for top, right, bottom, left */
+  gap: 0px;
+  
+  /* Align items vertically centered */
+  background-color: #1ac073;
+  /* Background color of the footer */
+  color: white;
+  /* Text color */
+}
+
+.footer .above{
+  display: flex;
+  /* Ensure the footer uses flex layout */
+  justify-content: space-between;
+  /* Space items evenly */
+  align-items: center;
+}
+
+.footer .logo {
+  font-size: 32px;
+  /* Fixed font size for logo */
+  font-weight: bold;
+  font-family: "Squada One", sans-serif;
+}
+
+.footer .nav-links {
+  display: flex;
+  gap: 40px;
+  font-family: Arial, sans-serif;
+  /* Fixed gap between navigation links */
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer .icons {
+  display: flex;
+  gap: 24px;
+  /* Fixed gap between icons */
+}
+
+.footer .icons img {
+  width: 24px;
+  /* Fixed size for icons */
+  height: 24px;
+  object-fit: contain;
+}
+
+.footer .icons .cart-image {
+  position: relative;
+}
+
+.footer .footer-line{
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff; /* White color for the line */
+  margin-top: 20px;
+  z-index: 1;
+}
